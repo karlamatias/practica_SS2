@@ -10,6 +10,15 @@ init()
 #year = 2020
 year = None
 
+#Solicitar el año a analizar
+def get_year_from_user(self):
+        while True:
+            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que des analizar: {Fore.RESET}")
+            if year_input.isdigit() and int(year_input) > 0:
+                return int(year_input)  # Devuelve el año como un entero
+            else:
+                print(f"{Fore.RED}El año ingresado no es válido. Inténtalo de nuevo.{Fore.RESET}")
+
 #Comprobar si un valor es positivo y entero (Si algun registro contiene un valor negativo o no numerico, se elimina del DataFrame)
 def is_positive_integer(value):
     try:
@@ -61,7 +70,7 @@ def standarize_data(dataframe):
     dataframe.loc[:, numeric_columns] = dataframe[numeric_columns].fillna(0).replace('N/A', 0)
 
     # Filtrar filas donde al menos una columna numérica no es un entero positivo
-    condition = dataframe[numeric_columns].applymap(is_positive_integer).all(axis=1)
+    condition = dataframe[numeric_columns].apply(lambda x: x.map(is_positive_integer)).all(axis=1)
     dataframe = dataframe[condition]
 
     return dataframe
@@ -72,6 +81,10 @@ def standarize_data(dataframe):
 class Mundiales:
 
 # Solicitar el año a analizar
+    def __init__(self):
+        pass  
+
+    # Solicitar el año a analizar
     def get_year_from_user(self):
         global year  # Usar la variable global 'year'
         while True:

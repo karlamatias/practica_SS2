@@ -219,6 +219,7 @@ os.system("cls")
 print(f"{Fore.LIGHTGREEN_EX}El archivo {by_municipio_csv} fue seleccionado con éxito{Fore.RESET}")
 
 # Data Mundial 
+by_year_municipio = mundiales.get_year_from_user()
 data_mundial = mundiales.get_world_file()
 if data_mundial is not None:
     print(f"{Fore.LIGHTGREEN_EX}La data se ha leído con éxito{Fore.RESET}")
