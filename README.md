@@ -12,19 +12,19 @@ Esta practica consiste en la limpieza y analisis de datos, tiene como objetivo p
 
 ## Proceso de Limpieza de Datos
 
-    1. Seleccion de año: Solicita al usuario el año que desea analizar, para poder filtrar los datos de ambos archivos.
+    - Seleccion de año: Solicita al usuario el año que desea analizar, para poder filtrar los datos de ambos archivos.
    
-    2. Seleccion de Archivos: Solicita al usuario la ruta del archivo de fallecimientos por municipio y el enlace del archivo de fallecimientos a nivel mundial, los cuales son cargados y procesados en un dataset de pandas.
+    - Seleccion de Archivos: Solicita al usuario la ruta del archivo de fallecimientos por municipio y el enlace del archivo de fallecimientos a nivel mundial, los cuales son cargados y procesados en un dataset de pandas.
 
-    3. Limpieza de Dato Mundiales: Cada uno de los dataset es limpiado en funcioness personalizadas, ya que cada dataset cuenta con una estructura completamente diferente, dicha limpieza involucra varios filtros.
+    - Limpieza de Dato Mundiales: Cada uno de los dataset es limpiado en funcioness personalizadas, ya que cada dataset cuenta con una estructura completamente diferente, dicha limpieza involucra varios filtros.
 
-     4. Eliminacion de duplicados y registros no relevantes: Estandariza campos invalidos y  maneja los datos faltantes
+    - Eliminacion de duplicados y registros no relevantes: Estandariza campos invalidos y  maneja los datos faltantes
 
-     5. Validacion de fechas en formato correspondiente y validacion de campos numericos, para que no posean valores negativos o alfabeticos
+    - Validacion de fechas en formato correspondiente y validacion de campos numericos, para que no posean valores negativos o alfabeticos
 
-     6. Transformacion del dataset de datos por municipio, de tal forma que sea compatible con la estructura del dataset de los casos a nivel mundial.
+    - Transformacion del dataset de datos por municipio, de tal forma que sea compatible con la estructura del dataset de los casos a nivel mundial.
 
-     7. Union de ambos dataset en base a la fecha y posteriormente ingreso a una base de datos (PostgreSQL) en bloques de 50 paquetes o inserciones hasta llegar al total de registros.
+    - Union de ambos dataset en base a la fecha y posteriormente ingreso a una base de datos (PostgreSQL) en bloques de 50 paquetes o inserciones hasta llegar al total de registros.
 
 # Explicacion del Modelo de Datos
 

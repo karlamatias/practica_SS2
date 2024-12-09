@@ -71,7 +71,7 @@ class Municipios:
     def get_year_from_user(self):
         global year  # Usar la variable global 'year'
         while True:
-            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que deseas analizar en el archivo de municipios: {Fore.RESET}")
+            year_input = input(f"{Fore.BLUE}Por favor ingresa el año que deseas analizar en el archivo de municipios: {Fore.RESET}")
             if year_input.isdigit() and int(year_input) > 0:
                 year = int(year_input)  # Modificar la variable global
                 return year

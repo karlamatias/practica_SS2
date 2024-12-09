@@ -22,9 +22,7 @@ def is_valid_alpha(value):
     # Verifica si el valor contiene únicamente letras y espacios
     return all(char.isalpha() or char.isspace() for char in value)    
 
-#Filtrar un DataFrame para incluir solo filas donde las columnas departamento y municipio contienen valores alfabéticos válidos.
 def validate_alpha_columns(dataframe):
-    # Aplica la función de validación a las columnas "departamento" y "municipio"
     condition = dataframe[['Country']].applymap(is_valid_alpha).all(axis=1)
 
     # Filtra el DataFrame original
