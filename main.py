@@ -166,10 +166,12 @@ def insert_final_data(final_data):
 def insert_to_database(queries):
     conn = db_connection()
     print(f"{Fore.YELLOW}Reporte de Inserción de Bloques{Fore.RESET}")
+    
     for i, query in enumerate(queries, 1):  # Enumerar los bloques
+        report = {'commit_cont': 0, 'rollback_cont': 0}  # Inicializar el reporte
         try:
             # Ejecutar cada query
-            report = execute_queries(conn, [query])
+            report = execute_queries(conn, [query])  # Esto se ejecuta solo si no hay excepciones
             print(f"{Fore.LIGHTGREEN_EX}Bloque {i}: Exitoso{Fore.RESET}")
         except Exception as e:
             print(f"{Fore.RED}Bloque {i}: Fallido - {e}{Fore.RESET}")
@@ -184,6 +186,7 @@ def insert_to_database(queries):
             pause()
 
     conn.close()
+
 
 def make_md_batch(registers):
     query_values = ""

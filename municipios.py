@@ -8,15 +8,6 @@ init()
 #year = 2020
 year = None
 
-#Solicitar el año a analizar
-def get_year_from_user(self):
-        while True:
-            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que des analizar: {Fore.RESET}")
-            if year_input.isdigit() and int(year_input) > 0:
-                return int(year_input)  # Devuelve el año como un entero
-            else:
-                print(f"{Fore.RED}El año ingresado no es válido. Inténtalo de nuevo.{Fore.RESET}")
-
 #Verificar si un valor es un entero positivo
 def is_positive_integer(value):
     try:
@@ -80,7 +71,7 @@ class Municipios:
     def get_year_from_user(self):
         global year  # Usar la variable global 'year'
         while True:
-            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que deseas analizar: {Fore.RESET}")
+            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que deseas analizar en el archivo de municipios: {Fore.RESET}")
             if year_input.isdigit() and int(year_input) > 0:
                 year = int(year_input)  # Modificar la variable global
                 return year

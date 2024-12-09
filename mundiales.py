@@ -10,14 +10,6 @@ init()
 #year = 2020
 year = None
 
-#Solicitar el año a analizar
-def get_year_from_user(self):
-        while True:
-            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que des analizar: {Fore.RESET}")
-            if year_input.isdigit() and int(year_input) > 0:
-                return int(year_input)  # Devuelve el año como un entero
-            else:
-                print(f"{Fore.RED}El año ingresado no es válido. Inténtalo de nuevo.{Fore.RESET}")
 
 #Comprobar si un valor es positivo y entero (Si algun registro contiene un valor negativo o no numerico, se elimina del DataFrame)
 def is_positive_integer(value):
@@ -88,7 +80,7 @@ class Mundiales:
     def get_year_from_user(self):
         global year  # Usar la variable global 'year'
         while True:
-            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que deseas analizar: {Fore.RESET}")
+            year_input = input(f"{Fore.YELLOW}Por favor ingresa el año que deseas analizar en el archivo mundial: {Fore.RESET}")
             if year_input.isdigit() and int(year_input) > 0:
                 year = int(year_input)  # Modificar la variable global
                 return year
