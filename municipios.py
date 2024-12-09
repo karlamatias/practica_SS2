@@ -103,8 +103,8 @@ class Municipios:
         print(f"{Fore.CYAN}Eliminando datos irrelevantes para el análisis{Fore.RESET}")
 
         print(f"{Fore.CYAN}Estandarizando Campos Inválidos{Fore.RESET}")
+        #Estandariza la data (Maneja los datos faltantes y demas)
         dataframe = standarize_data(dataframe)
-
         print(f"{Fore.CYAN}Manejando Datos Faltantes{Fore.RESET}")
         print(f"{Fore.GREEN}Limpieza de Datos por Municipio Realizada con Éxito{Fore.RESET}")
         return dataframe

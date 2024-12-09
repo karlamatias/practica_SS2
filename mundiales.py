@@ -131,12 +131,10 @@ class Mundiales:
         # Estandarizar datos
         print(f"{Fore.CYAN}Estandariazando Campos Inválidos{Fore.RESET}")
         dataframe.replace('N/A', pd.NA, inplace=True)
+      
         # Estandarizar fecha
         dataframe = standarize_data(dataframe)
-
-
         print(f"{Fore.CYAN}Manejando Datos Faltantes{Fore.RESET}")
-
         print(f"{Fore.GREEN}Limpieza de Datos Mundiales Realizada con Éxito (Se Obtuvo solamente datos de Guatemala){Fore.RESET}")
         return dataframe
     
