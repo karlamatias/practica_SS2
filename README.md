@@ -63,15 +63,9 @@ Esta practica consiste en la limpieza y analisis de datos, tiene como objetivo p
  - fallecidos (int) - Total de muertes en el municipio
  - casos_mundiales (int) - Muertes del dia en el pais
 
-## Imagen Modelo de Datos 
-![Imagen](C:\Users\kafer\Desktop\Seminario 2\Practica\Archivos\DiagramaERPractica.jpg)
-
 ## Inicializacion del Proyecto
 
 1. Ejecutar el Proyecto Principal
 
 ```bash
 python main.py
-
-
-
