@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Covid-19</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="DashboardMunicipios.html">
+            <img src="img/mapa.png" alt="Municipios Icono" class="icon"> Municipios
+        </a>
+        <a href="DashboardDepartamento.html">
+            <img src="img/guatemala.png" alt="Departamentos Icono" class="icon"> Departamentos
+        </a>
+        <a href="DashboardGlobal.html">
+            <img src="img/planeta-tierra.png" alt="Datos Globales Icono" class="icon"> Datos Globales
+        </a>
+        <a href="Conclusiones.html">
+            <img src="img/informe-seo.png" alt="Conclusiones Icono" class="icon"> Conclusiones
+        </a>
+    </nav>
+
+    <section id="contenido">
+        <h1>Conclusiones</h1>
+
+        <div class="conclusion" id="conclusion1">
+            <div class="conclusion-header">
+                <p class="conclusion-number">1.</p>
+                <button class="toggle-button" onclick="toggleConclusion(1)">+</button>
+            </div>
+            <p>Los municipios que fueron más afectados durante la pandemia COVID-19...</p>
+            <div class="hidden-text" id="text1">
+                <p>fueron aquellos pertenecientes al área urbana y esto puede ser consecuencia del estilo de vida que
+                    las personas tienen en estas áreas, además de la población tan grande que habita estos lugares.
+                    Recordemos que en su mayoría el área rural cuenta con espacios abiertos, que ayudan a que el aire
+                    circule de mejor manera que en el área urbana.</p>
+            </div>
+            <div class="hidden-image" id="image1">
+                <img src="img/tu-imagen.jpg" alt="Imagen de conclusión" />
+            </div>
+        </div>
+
+        <div class="conclusion" id="conclusion2">
+            <div class="conclusion-header">
+                <p class="conclusion-number">2.</p>
+                <button class="toggle-button" onclick="toggleConclusion(2)">+</button>
+            </div>
+            <p>La pandemia dejó claro que el balance entre comercio y salud pública es esencial...</p>
+            <div class="hidden-text" id="text2">
+                <p>Los comerciantes y empresas que implementaron medidas de prevención, como reuniones virtuales,
+                    comercio al aire libre y protocolos de bioseguridad, lograron minimizar el impacto de la pandemia en
+                    sus comunidades.</p>
+            </div>
+            <div class="hidden-image" id="image2">
+                <img src="img/tu-imagen2.jpg" alt="Imagen de conclusión 2" />
+            </div>
+        </div>
+
+        <div class="conclusion" id="conclusion3">
+            <div class="conclusion-header">
+                <p class="conclusion-number">3.</p>
+                <button class="toggle-button" onclick="toggleConclusion(3)">+</button>
+            </div>
+            <p>Algunos municipios rurales, como Chinautla, Coatepeque, Huehuetenango...</p>
+            <div class="hidden-text" id="text3">
+                <p>Puerto Barrios, entre otros, tuvieron un incremento notable de casos y muertes. A pesar de contar con menor densidad poblacional, estos municipios vieron un aumento en las muertes probablemente debido a factores como la falta de infraestructura de salud adecuada, el acceso limitado a servicios médicos u otros.</p>
+            </div>
+            <div class="hidden-image" id="image3">
+                <img src="img/tu-imagen3.jpg" alt="Imagen de conclusión 3" />
+            </div>
+        </div>
+
+        <div class="conclusion" id="conclusion4">
+            <div class="conclusion-header">
+                <p class="conclusion-number">4.</p>
+                <button class="toggle-button" onclick="toggleConclusion(4)">+</button>
+            </div>
+            <p>En 2020 (Hasta la fecha donde se tomaron los datos)...</p>
+            <div class="hidden-text" id="text4">
+                <p>algunos municipios aún no habían reportado muertes por COVID-19, lo que genera dudas sobre la veracidad de los datos. En algunos casos, podría haberse tratado la falta de monitorizacion o documentacion de los datos o bien la falta de acceso a servicios médicos adecuados.</p>
+            </div>
+            <div class="hidden-image" id="image3">
+                <img src="img/tu-imagen3.jpg" alt="Imagen de conclusión 3" />
+            </div>
+        </div>
+
+        <div class="conclusion" id="conclusion5">
+            <div class="conclusion-header">
+                <p class="conclusion-number">5.</p>
+                <button class="toggle-button" onclick="toggleConclusion(5)">+</button>
+            </div>
+            <p>A lo largo de la pandemia, varios municipios y departamentos demostraron...</p>
+            <div class="hidden-text" id="text5">
+                <p>ser efectivos en la contención del virus, lo que resultó en una menor tasa de mortalidad.</p>
+            </div>
+            <div class="hidden-image" id="image3">
+                <img src="img/tu-imagen3.jpg" alt="Imagen de conclusión 3" />
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
