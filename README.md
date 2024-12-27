@@ -65,7 +65,7 @@ Esta practica consiste en la limpieza y analisis de datos, tiene como objetivo p
 
 # Proyecto Fase 2
 
-*Nota: Para esta fase del proyecto, no se realizo ninguna modificacion en la logica anterior, la base de datos se utilizo como se creo desde la practica. Todos los calculos que se realizaron se realizaron con formulas propias de Power BI y utilizando las tablas y columnas que se tenian en la base de datos que se llama covid_data*
+*Nota: Para esta fase del proyecto, no se realizo ninguna modificacion en la logica anterior, la base de datos se utilizo como se creo desde la practica. Todos los calculos que se realizaron se realizaron con formulas propias de Power BI y utilizando las tablas y columnas que se tenian en la base de datos llamada covid_data*
 
 ## Dashboard "Fallecidos por Municipio"
 
